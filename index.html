@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapnil Ingole - Portfolio</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative">
+    <!-- Background Elements -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <!-- Grid Pattern -->
+        <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-10"></div>
+        
+        <!-- Animated Gradient Orbs -->
+        <div class="absolute top-1/4 -left-48 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute top-1/3 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-0 left-1/3 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        
+        <!-- Central Gradient Orb -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 0.5s;"></div>
+        
+        <!-- Floating Particles -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-3 h-3 bg-white/30 rounded-full animate-float"></div>
+            <div class="absolute top-1/3 right-1/3 w-4 h-4 bg-primary/40 rounded-full animate-float" style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-1/4 left-1/2 w-3 h-3 bg-secondary/40 rounded-full animate-float" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 right-1/4 w-4 h-4 bg-accent/40 rounded-full animate-float" style="animation-delay: 1.5s;"></div>
+            <div class="absolute bottom-1/3 left-1/3 w-3 h-3 bg-white/30 rounded-full animate-float" style="animation-delay: 0.5s;"></div>
+        </div>
+        
+        <!-- Gradient Lines -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+            <div class="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent"></div>
+            <div class="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"></div>
+            <div class="absolute top-3/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-800/50">
+        <div class="max-w-screen-xl mx-auto h-20 flex items-center justify-center">
+            <!-- Navigation Links -->
+            <div class="flex items-center justify-center space-x-16">
+                <div class="nav-icon nav-glow active group" data-section="home">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
+                        <i class="fas fa-home text-2xl text-primary"></i>
+                    </div>
+                    <span class="text-xs font-medium mt-2 text-gray-400 group-hover:text-white transition-colors duration-300">Home</span>
+                </div>
+                <div class="nav-icon nav-glow group" data-section="skills">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:bg-accent/20">
+                        <i class="fas fa-code text-2xl text-accent"></i>
+                    </div>
+                    <span class="text-xs font-medium mt-2 text-gray-400 group-hover:text-white transition-colors duration-300">Skills</span>
+                </div>
+                <div class="nav-icon nav-glow group" data-section="projects">
+                    <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:bg-secondary/20">
+                        <i class="fas fa-project-diagram text-2xl text-secondary"></i>
+                    </div>
+                    <span class="text-xs font-medium mt-2 text-gray-400 group-hover:text-white transition-colors duration-300">Projects</span>
+                </div>
+                <div class="nav-icon nav-glow group" data-section="academics">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
+                        <i class="fas fa-graduation-cap text-2xl text-primary"></i>
+                    </div>
+                    <span class="text-xs font-medium mt-2 text-gray-400 group-hover:text-white transition-colors duration-300">Academics</span>
+                </div>
+                <div class="nav-icon nav-glow group" data-section="contact">
+                    <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:bg-accent/20">
+                        <i class="fas fa-envelope text-2xl text-accent"></i>
+                    </div>
+                    <span class="text-xs font-medium mt-2 text-gray-400 group-hover:text-white transition-colors duration-300">Contact</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20 p-6 md:p-12 max-w-6xl mx-auto">
+        <!-- Home Section -->
+        <section id="home" class="section active min-h-[calc(100vh-5rem)] flex items-center justify-center relative overflow-hidden home-bg">
+            <!-- Background Elements -->
+            <div class="absolute inset-0">
+                <!-- Animated Particles -->
+                <div class="particle" style="top: 20%; left: 20%"></div>
+                <div class="particle" style="top: 40%; left: 60%; animation-delay: 0.5s"></div>
+                <div class="particle" style="top: 60%; left: 40%; animation-delay: 1s"></div>
+                <div class="particle" style="top: 80%; left: 80%; animation-delay: 1.5s"></div>
+                <div class="particle" style="top: 30%; left: 70%; animation-delay: 2s"></div>
+                
+                <!-- Grid Pattern -->
+                <div class="absolute inset-0 bg-grid-pattern"></div>
+            </div>
+
+            <div class="text-center relative z-10">
+                <div class="relative w-40 h-40 md:w-48 md:h-48 mx-auto mb-8 glow-border">
+                    <!-- Profile Image Glow -->
+                    <div class="absolute inset-0 bg-blue-500/30 rounded-full blur-xl"></div>
+                    <div class="absolute inset-0 bg-purple-500/30 rounded-full blur-xl"></div>
+                    <div class="absolute inset-0 bg-pink-500/30 rounded-full blur-xl"></div>
+                    
+                    <!-- Profile Image -->
+                    <img src="./images/profile.jpg" alt="Swapnil Ingole" class="w-full h-full object-cover object-center rounded-full border-2 border-white/20 shadow-lg relative z-10">
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-2 text-gradient text-glow animate-slide-up">Swapnil Ingole</h1>
+                <p class="text-xl md:text-2xl text-blue-400 font-medium mb-4 animate-slide-up text-glow" style="animation-delay: 0.2s">MIT Academy of Engineering</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4 text-purple-300 animate-slide-up" style="animation-delay: 0.4s">
+                    <p class="flex items-center justify-center gap-2">
+                        <i class="fas fa-users"></i>
+                        <span>Division: CS6</span>
+                    </p>
+                    <p class="flex items-center justify-center gap-2">
+                        <i class="fas fa-id-card"></i>
+                        <span>PRN: 202401080051</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section hidden min-h-screen py-12">
+            <h2 class="section-title section-title-glow text-glow">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- MERN Stack -->
+                <div class="skill-card card-hover-effect glass-effect animate-slide-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-code text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow">MERN Stack</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-item skill-item-glow">
+                            <i class="fab fa-mongodb text-xl text-primary"></i>
+                            <span class="font-medium">MongoDB</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fab fa-node-js text-xl text-primary"></i>
+                            <span class="font-medium">Express.js</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fab fa-react text-xl text-primary"></i>
+                            <span class="font-medium">React.js</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fab fa-node text-xl text-primary"></i>
+                            <span class="font-medium">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Developer -->
+                <div class="skill-card card-hover-effect glass-effect animate-slide-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-brain text-3xl text-accent"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow">AI Developer</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-robot text-xl text-accent"></i>
+                            <span class="font-medium">Machine Learning</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-network-wired text-xl text-accent"></i>
+                            <span class="font-medium">Deep Learning</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-brain text-xl text-accent"></i>
+                            <span class="font-medium">Neural Networks</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-chart-line text-xl text-accent"></i>
+                            <span class="font-medium">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C++ -->
+                <div class="skill-card card-hover-effect glass-effect animate-slide-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-c++ text-3xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow">C++</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-sitemap text-xl text-secondary"></i>
+                            <span class="font-medium">Data Structures</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-project-diagram text-xl text-secondary"></i>
+                            <span class="font-medium">Algorithms</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-cube text-xl text-secondary"></i>
+                            <span class="font-medium">OOP</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-code-branch text-xl text-secondary"></i>
+                            <span class="font-medium">STL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <div class="skill-card card-hover-effect glass-effect animate-slide-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-java text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow">Java</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-coffee text-xl text-primary"></i>
+                            <span class="font-medium">Core Java</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-leaf text-xl text-primary"></i>
+                            <span class="font-medium">Spring Framework</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-database text-xl text-primary"></i>
+                            <span class="font-medium">JPA/Hibernate</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-server text-xl text-primary"></i>
+                            <span class="font-medium">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-card card-hover-effect glass-effect animate-slide-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-database text-3xl text-accent"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow">Database</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-table text-xl text-accent"></i>
+                            <span class="font-medium">SQL</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fab fa-mongodb text-xl text-accent"></i>
+                            <span class="font-medium">MongoDB</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-fire text-xl text-accent"></i>
+                            <span class="font-medium">Firebase</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-server text-xl text-accent"></i>
+                            <span class="font-medium">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="skill-card card-hover-effect glass-effect animate-slide-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-mobile-alt text-3xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow">Mobile Development</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-item skill-item-glow">
+                            <i class="fab fa-react text-xl text-secondary"></i>
+                            <span class="font-medium">React Native</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fas fa-mobile text-xl text-secondary"></i>
+                            <span class="font-medium">Flutter</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fab fa-android text-xl text-secondary"></i>
+                            <span class="font-medium">Android</span>
+                        </div>
+                        <div class="skill-item skill-item-glow">
+                            <i class="fab fa-apple text-xl text-secondary"></i>
+                            <span class="font-medium">iOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section hidden min-h-screen py-12">
+            <h2 class="section-title section-title-glow text-glow">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- E-Commerce Website -->
+                <div class="project-card card-hover-effect glass-effect project-card-glow animate-slide-up">
+                    <div class="flex flex-col items-center p-8">
+                        <div class="w-24 h-24 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-shopping-cart text-4xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow mb-4">E-Commerce Platform</h3>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="px-3 py-1 bg-primary/10 rounded-full text-sm text-primary">
+                                <i class="fab fa-react mr-1"></i> React
+                            </span>
+                            <span class="px-3 py-1 bg-primary/10 rounded-full text-sm text-primary">
+                                <i class="fab fa-node-js mr-1"></i> Node.js
+                            </span>
+                            <span class="px-3 py-1 bg-primary/10 rounded-full text-sm text-primary">
+                                <i class="fas fa-database mr-1"></i> MongoDB
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Image Generator -->
+                <div class="project-card card-hover-effect glass-effect project-card-glow animate-slide-up">
+                    <div class="flex flex-col items-center p-8">
+                        <div class="w-24 h-24 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-robot text-4xl text-accent"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow mb-4">AI Image Generator</h3>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="px-3 py-1 bg-accent/10 rounded-full text-sm text-accent">
+                                <i class="fab fa-python mr-1"></i> Python
+                            </span>
+                            <span class="px-3 py-1 bg-accent/10 rounded-full text-sm text-accent">
+                                <i class="fas fa-brain mr-1"></i> TensorFlow
+                            </span>
+                            <span class="px-3 py-1 bg-accent/10 rounded-full text-sm text-accent">
+                                <i class="fas fa-network-wired mr-1"></i> Neural Networks
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Game -->
+                <div class="project-card card-hover-effect glass-effect project-card-glow animate-slide-up">
+                    <div class="flex flex-col items-center p-8">
+                        <div class="w-24 h-24 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-gamepad text-4xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow mb-4">3D Adventure Game</h3>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="px-3 py-1 bg-secondary/10 rounded-full text-sm text-secondary">
+                                <i class="fab fa-unity mr-1"></i> Unity
+                            </span>
+                            <span class="px-3 py-1 bg-secondary/10 rounded-full text-sm text-secondary">
+                                <i class="fas fa-code mr-1"></i> C#
+                            </span>
+                            <span class="px-3 py-1 bg-secondary/10 rounded-full text-sm text-secondary">
+                                <i class="fas fa-cube mr-1"></i> 3D Modeling
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media App -->
+                <div class="project-card card-hover-effect glass-effect project-card-glow animate-slide-up">
+                    <div class="flex flex-col items-center p-8">
+                        <div class="w-24 h-24 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-users text-4xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow mb-4">Social Media App</h3>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="px-3 py-1 bg-primary/10 rounded-full text-sm text-primary">
+                                <i class="fab fa-react mr-1"></i> React Native
+                            </span>
+                            <span class="px-3 py-1 bg-primary/10 rounded-full text-sm text-primary">
+                                <i class="fas fa-fire mr-1"></i> Firebase
+                            </span>
+                            <span class="px-3 py-1 bg-primary/10 rounded-full text-sm text-primary">
+                                <i class="fas fa-mobile mr-1"></i> Mobile
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Management System -->
+                <div class="project-card card-hover-effect glass-effect project-card-glow animate-slide-up">
+                    <div class="flex flex-col items-center p-8">
+                        <div class="w-24 h-24 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-tasks text-4xl text-accent"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow mb-4">Task Management</h3>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="px-3 py-1 bg-accent/10 rounded-full text-sm text-accent">
+                                <i class="fab fa-vuejs mr-1"></i> Vue.js
+                            </span>
+                            <span class="px-3 py-1 bg-accent/10 rounded-full text-sm text-accent">
+                                <i class="fas fa-server mr-1"></i> Express
+                            </span>
+                            <span class="px-3 py-1 bg-accent/10 rounded-full text-sm text-accent">
+                                <i class="fas fa-database mr-1"></i> PostgreSQL
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather Dashboard -->
+                <div class="project-card card-hover-effect glass-effect project-card-glow animate-slide-up">
+                    <div class="flex flex-col items-center p-8">
+                        <div class="w-24 h-24 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-cloud-sun text-4xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gradient text-glow mb-4">Weather Dashboard</h3>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="px-3 py-1 bg-secondary/10 rounded-full text-sm text-secondary">
+                                <i class="fab fa-js mr-1"></i> JavaScript
+                            </span>
+                            <span class="px-3 py-1 bg-secondary/10 rounded-full text-sm text-secondary">
+                                <i class="fas fa-chart-line mr-1"></i> Charts.js
+                            </span>
+                            <span class="px-3 py-1 bg-secondary/10 rounded-full text-sm text-secondary">
+                                <i class="fas fa-cloud mr-1"></i> API
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="section hidden min-h-screen py-12">
+            <h2 class="section-title section-title-glow text-glow">Academic Journey</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="timeline-item card-hover-effect glass-effect animate-slide-up">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-glow">Bachelor of Technology in Information Technology</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-primary font-medium">MIT Academy of Engineering</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                            <p class="flex items-center gap-2">
+                                <i class="fas fa-users text-primary"></i>
+                                <span>Division: CS6</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <i class="fas fa-id-card text-primary"></i>
+                                <span>PRN: 202401080051</span>
+                            </p>
+                        </div>
+                        <div class="mt-6 p-4 bg-primary/10 rounded-lg">
+                            <p class="text-primary font-bold text-xl text-glow">CGPA: 8.5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section hidden min-h-screen py-12">
+            <h2 class="section-title section-title-glow text-glow">Contact Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="contact-item card-hover-effect glass-effect contact-item-glow animate-slide-up">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-glow">Phone</h3>
+                    <p class="text-secondary">+91 9322425674</p>
+                </div>
+                <div class="contact-item card-hover-effect glass-effect contact-item-glow animate-slide-up" style="animation-delay: 0.2s">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-glow">Email</h3>
+                    <a href="mailto:swapnilingole008@gmail.com" class="contact-link">
+                        swapnilingole008@gmail.com
+                    </a>
+                </div>
+                <div class="contact-item card-hover-effect glass-effect contact-item-glow animate-slide-up" style="animation-delay: 0.4s">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-instagram text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-glow">Instagram</h3>
+                    <a href="https://instagram.com/mr_genius_swapnil" class="contact-link" target="_blank">
+                        @mr_genius_swapnil
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
+

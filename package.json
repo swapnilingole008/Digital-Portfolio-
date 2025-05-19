@@ -1,0 +1,25 @@
+{
+  "name": "digital-portfolio",
+  "version": "1.0.0",
+  "description": "A modern digital portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwindcss",
+    "web-development"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "live-server": "^1.2.2"
+  }
+} 
+
